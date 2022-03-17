@@ -10,7 +10,7 @@ class Zouch < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+1/zouch_0.3.6+1_darwin_arm64.tar.gz"
-      sha256 "cfd32bb85b56dbadb994e564ca8b91bf6334e7a8767ba46c5eeff00814dd0f71"
+      sha256 "ed68f695de5c6f08316286c61a157c01793291c2bd1d75281fcbbb74e4c3ffc6"
 
       def install
         bin.install "zouch"
@@ -18,7 +18,7 @@ class Zouch < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+1/zouch_0.3.6+1_darwin_amd64.tar.gz"
-      sha256 "28c1f747f01bc692a3dc64b596356af399200173b37e49fda7a4da519b0ba7e1"
+      sha256 "dfb2a33fb5eae4f707815a0c742cca3219b0cca5a3ced0302a41e72fa70df0c2"
 
       def install
         bin.install "zouch"
@@ -27,17 +27,17 @@ class Zouch < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+1/zouch_0.3.6+1_linux_arm64.tar.gz"
-      sha256 "d147dcaa3a4ce7cffc65e54409a6c7782c8fe6ea7615d64dee8249bddac96b00"
+    if Hardware::CPU.intel?
+      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+1/zouch_0.3.6+1_linux_amd64.tar.gz"
+      sha256 "f6ea1bb7150b92ce3e06e5b6dfdfcff93441ad53ca5fe921106a7cc1e28e119d"
 
       def install
         bin.install "zouch"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+1/zouch_0.3.6+1_linux_amd64.tar.gz"
-      sha256 "a300c70bba3329b41773d14c2ae5d2f2852700a0ec02b8179e95ca0e763bb26d"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+1/zouch_0.3.6+1_linux_arm64.tar.gz"
+      sha256 "7d537bbbe7bc3b776c876fe97ea68881b640d698db3c1b98ffc224d26d533d36"
 
       def install
         bin.install "zouch"
