@@ -10,14 +10,14 @@ class Almel < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Ryooooooga/almel/releases/download/v1.3.1+1/almel-v1.3.1+1-x86_64-apple-darwin.tar.gz"
-      sha256 "d6c767ebdad6672a2655c8f371055382227622c7e5edde71d63c6d46305ab6bd"
+      sha256 "9ec63782d3cf78d9f5d927b2b33e5afa5f96209aeeca73fe055a50f383f2000d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/Ryooooooga/almel/releases/download/v1.3.1+1/almel-v1.3.1+1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e6980fca7d7aeb0dcb806e25caf3b24514d3f040ba6602df7f44ff056b109de2"
+      sha256 "687d9769e46ff36fb63b713d236f61b485bd8edd59981ebd5a13f9581eef6af8"
     end
   end
 
