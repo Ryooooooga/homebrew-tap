@@ -12,12 +12,20 @@ class ${name} < Formula
       url "${repo}/releases/download/${tag}/${x86_64_darwin}"
       sha256 "${x86_64_darwin_sha256}"
     end
+    if Hardware::CPU.arm?
+      url "${repo}/releases/download/${tag}/${aarch64_darwin}"
+      sha256 "${aarch64_darwin_sha256}"
+    end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "${repo}/releases/download/${tag}/${x86_64_linux}"
       sha256 "${x86_64_linux_sha256}"
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "${repo}/releases/download/${tag}/${aarch64_linux}"
+      sha256 "${aarch64_linux_sha256}"
     end
   end
 
