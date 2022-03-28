@@ -32,4 +32,8 @@ class ${name} < Formula
   def install
     bin.install "${bin}"
   end
+
+  test do
+    system "#{bin}/${bin}", "--version"
+  end
 end

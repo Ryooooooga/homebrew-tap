@@ -32,4 +32,8 @@ class Zabrze < Formula
   def install
     bin.install "zabrze"
   end
+
+  test do
+    system "#{bin}/zabrze", "--version"
+  end
 end

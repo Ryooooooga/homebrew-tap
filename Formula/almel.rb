@@ -32,4 +32,8 @@ class Almel < Formula
   def install
     bin.install "almel"
   end
+
+  test do
+    system "#{bin}/almel", "--version"
+  end
 end
