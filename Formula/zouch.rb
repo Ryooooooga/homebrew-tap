@@ -5,20 +5,20 @@
 class Zouch < Formula
   desc "Create a new file from a template."
   homepage "https://github.com/Ryooooooga/zouch"
-  version "0.3.6+1"
+  version "0.3.6+2"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+1/zouch_0.3.6+1_darwin_arm64.tar.gz"
-      sha256 "92f88873061017bc54dfb7912ae25cbb28e6c5752c57b1dcf97afb9f7e21b8a9"
+    if Hardware::CPU.intel?
+      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+2/zouch_0.3.6+2_darwin_amd64.tar.gz"
+      sha256 "ee0e94ca2b352b1c72ede2ee5913a000bf5ae14a6cf72daf6e0b7ccd094d4dd8"
 
       def install
         bin.install "zouch"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+1/zouch_0.3.6+1_darwin_amd64.tar.gz"
-      sha256 "7a0b2cd525489e5a3e15bc7d2a1b10384b67accf27a9960ea73b10e1500e2f7d"
+    if Hardware::CPU.arm?
+      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+2/zouch_0.3.6+2_darwin_arm64.tar.gz"
+      sha256 "8732a60f60935e28959267f8fd503ff37067c4b660895a59d9c07fa73e29ad03"
 
       def install
         bin.install "zouch"
@@ -27,21 +27,25 @@ class Zouch < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+1/zouch_0.3.6+1_linux_amd64.tar.gz"
-      sha256 "069dab82ab8719d39a6e176c476ec857d856a40902ed92a2d2c9453b0f90d49c"
-
-      def install
-        bin.install "zouch"
-      end
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+1/zouch_0.3.6+1_linux_arm64.tar.gz"
-      sha256 "615760f926cf43eca41056f2a6f85a4abc7edc1db7558603fedead1a61fb10ba"
+      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+2/zouch_0.3.6+2_linux_arm64.tar.gz"
+      sha256 "53dfbc60189c24fd56bd61a6231483f3ed1f41010bd540349e007c6c307ede19"
 
       def install
         bin.install "zouch"
       end
     end
+    if Hardware::CPU.intel?
+      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+2/zouch_0.3.6+2_linux_amd64.tar.gz"
+      sha256 "cd658d39f49d3753ca464fb53fa761d62f52d80a3daaa3ef43c0bc684661eb07"
+
+      def install
+        bin.install "zouch"
+      end
+    end
+  end
+
+  test do
+    system "#{bin}/zouch", "--version"
   end
 end
