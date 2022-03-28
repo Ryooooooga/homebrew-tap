@@ -21,8 +21,6 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
-      - name: brew install ryooooooga/tap/${{ matrix.target }}
-        run: brew install ryooooooga/tap/${{ matrix.target }}
-
-      - name: ${{ matrix.target }} --version
-        run: ${{ matrix.target }} --version
+      - run: brew install -v ryooooooga/tap/${{ matrix.target }}
+      - run: brew test -v ${{ matrix.target }}
+      - run: which ${{ matrix.target }}
