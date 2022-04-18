@@ -5,27 +5,27 @@
 class Zabrze < Formula
   desc "ZSH abbreviation expansion plugin"
   homepage "https://github.com/Ryooooooga/zabrze"
-  version "0.1.6+2"
+  version "0.1.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/zabrze/releases/download/v0.1.6+2/zabrze-v0.1.6+2-x86_64-apple-darwin.tar.gz"
-      sha256 "7b15e68dfe929050b04a339b2a496419898749a2f378bb544776e26d46ccf2a7"
+      url "https://github.com/Ryooooooga/zabrze/releases/download/v0.1.7/zabrze-v0.1.7-x86_64-apple-darwin.tar.gz"
+      sha256 "f124d8a3e8705b4f3cc7ce59c374214b73faebeb66508fa2179fceb260974128"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Ryooooooga/zabrze/releases/download/v0.1.6+2/zabrze-v0.1.6+2-aarch64-apple-darwin.tar.gz"
-      sha256 "c01bef6a112c056e2751e469df608bce826878af6872173796481f5c13640ec4"
+      url "https://github.com/Ryooooooga/zabrze/releases/download/v0.1.7/zabrze-v0.1.7-aarch64-apple-darwin.tar.gz"
+      sha256 "3dfdcc691700696b0761d0753819c0e48368664ad5dc5923de38d74716b39c6d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/zabrze/releases/download/v0.1.6+2/zabrze-v0.1.6+2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f48ccb88aae701669c3235aef910331b556e81b87a536c6eadf29cdee0c19414"
+      url "https://github.com/Ryooooooga/zabrze/releases/download/v0.1.7/zabrze-v0.1.7-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b6148451262ec034525096fc1aeab75359d5fcbdaa5b1e31e0d98672a0e9d207"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ryooooooga/zabrze/releases/download/v0.1.6+2/zabrze-v0.1.6+2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f5ecf545a07044d245f100b40648d5cecc69f057f2ff1f6973e8d8ccd9c71eb8"
+      url "https://github.com/Ryooooooga/zabrze/releases/download/v0.1.7/zabrze-v0.1.7-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "96c20182a13c4fd6e9956dbce9a23e93763f156fd0aa4cdad1ce9f6418827525"
     end
   end
 
