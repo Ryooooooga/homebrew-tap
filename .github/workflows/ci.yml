@@ -13,6 +13,7 @@ jobs:
           - almel
           - zabrze
           - zouch
+          - qwy
         os:
           - macOS-latest
           - ubuntu-latest
