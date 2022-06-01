@@ -8,17 +8,17 @@ class Qwy < Formula
   version "0.1.0-preview+3"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/qwy/releases/download/v0.1.0-preview+3/qwy_0.1.0-preview+3_darwin_amd64.tar.gz"
-      sha256 "675040c0a1065ea16ce98747412ac5cbe8fca6c4f448b421bf2adc45d9a1ad66"
+    if Hardware::CPU.arm?
+      url "https://github.com/Ryooooooga/qwy/releases/download/v0.1.0-preview+3/qwy_0.1.0-preview+3_darwin_arm64.tar.gz"
+      sha256 "c18e1d34e17bc8fcd7248a09aa7379ad3470c9aa855b650be0cad8d11e51289a"
 
       def install
         bin.install "qwy"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/Ryooooooga/qwy/releases/download/v0.1.0-preview+3/qwy_0.1.0-preview+3_darwin_arm64.tar.gz"
-      sha256 "0f9db4627cad4a68ba3d0341a6f2d31a1fd7574aed49aadee128bf528c16522d"
+    if Hardware::CPU.intel?
+      url "https://github.com/Ryooooooga/qwy/releases/download/v0.1.0-preview+3/qwy_0.1.0-preview+3_darwin_amd64.tar.gz"
+      sha256 "6e9497cfd2f98b33150644add52177a8d0b3339677be0d58783e3de8fb3c4702"
 
       def install
         bin.install "qwy"
@@ -29,7 +29,7 @@ class Qwy < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Ryooooooga/qwy/releases/download/v0.1.0-preview+3/qwy_0.1.0-preview+3_linux_arm64.tar.gz"
-      sha256 "868f9dbff8d4728d233a06ecdba1fbf3604590e868de70e3d9e08fcfa8382b7f"
+      sha256 "91c8adb947e319e04194b0953446f10adb6c0256862583b472d9961a1a235644"
 
       def install
         bin.install "qwy"
@@ -37,7 +37,7 @@ class Qwy < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/Ryooooooga/qwy/releases/download/v0.1.0-preview+3/qwy_0.1.0-preview+3_linux_amd64.tar.gz"
-      sha256 "03f2d208ff434be445eea0ede843e931add0451471e658ec6bcf4405acd5bf25"
+      sha256 "f371ce9672d74f61e07b2c9c4c4403526ff780c8ada35c1ef61d85d61ce19375"
 
       def install
         bin.install "qwy"
