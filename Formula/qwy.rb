@@ -5,20 +5,20 @@
 class Qwy < Formula
   desc "Zsh Fuzzy Completion Plugin"
   homepage "https://github.com/Ryooooooga/qwy"
-  version "0.1.0-preview+4"
+  version "0.1.0-preview+5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/qwy/releases/download/v0.1.0-preview+4/qwy_0.1.0-preview+4_darwin_amd64.tar.gz"
-      sha256 "59bad15d7ae19cb2631af5c06ef235842369efbdb0ed6ec2699a7d23d1641e02"
+      url "https://github.com/Ryooooooga/qwy/releases/download/v0.1.0-preview+5/qwy_0.1.0-preview+5_darwin_amd64.tar.gz"
+      sha256 "f614da822d0c3ffab82ab8518874f0daa915680d3f56fca493ff705611fef635"
 
       def install
         bin.install "qwy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Ryooooooga/qwy/releases/download/v0.1.0-preview+4/qwy_0.1.0-preview+4_darwin_arm64.tar.gz"
-      sha256 "d326ac751abc5ae235653ef440d53351103a1dab6d610842ac999567d9cfb20a"
+      url "https://github.com/Ryooooooga/qwy/releases/download/v0.1.0-preview+5/qwy_0.1.0-preview+5_darwin_arm64.tar.gz"
+      sha256 "860db3d9d3080b0abe1933c8f678f512d93258ad92e6985864defb008bde4889"
 
       def install
         bin.install "qwy"
@@ -28,16 +28,16 @@ class Qwy < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/qwy/releases/download/v0.1.0-preview+4/qwy_0.1.0-preview+4_linux_amd64.tar.gz"
-      sha256 "ef6976cbb3639beed59f9c0e9a0f76ef393cd180a6eb21ffdcbb9e386058f37d"
+      url "https://github.com/Ryooooooga/qwy/releases/download/v0.1.0-preview+5/qwy_0.1.0-preview+5_linux_amd64.tar.gz"
+      sha256 "f677d5e83dc50ff4d1ab01156739d62138b96652a82126e83ea79446527a5f7e"
 
       def install
         bin.install "qwy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ryooooooga/qwy/releases/download/v0.1.0-preview+4/qwy_0.1.0-preview+4_linux_arm64.tar.gz"
-      sha256 "7e13f3b0c4ccffcf725a583151024b986529bb8d8242077be6f93b8d81e628bd"
+      url "https://github.com/Ryooooooga/qwy/releases/download/v0.1.0-preview+5/qwy_0.1.0-preview+5_linux_arm64.tar.gz"
+      sha256 "3a54e970cd5eb21766b837c84e6a7be18df6bff96d11a87a9f317f5d47917ae4"
 
       def install
         bin.install "qwy"
