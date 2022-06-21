@@ -5,27 +5,27 @@
 class Almel < Formula
   desc "Fast and customizable shell prompt"
   homepage "https://github.com/Ryooooooga/almel"
-  version "1.4.2"
+  version "1.4.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/almel/releases/download/v1.4.2/almel-v1.4.2-x86_64-apple-darwin.tar.gz"
-      sha256 "b28252d35e2d50a1775de39789765f8711c2b8fcbd0c6870d409b74003819ac4"
+      url "https://github.com/Ryooooooga/almel/releases/download/v1.4.3/almel-v1.4.3-x86_64-apple-darwin.tar.gz"
+      sha256 "7bf8f8bf4981faa0419c4aa5e78c4eb52e46c2c23a538bc1848b82b47c8d4a1b"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Ryooooooga/almel/releases/download/v1.4.2/almel-v1.4.2-aarch64-apple-darwin.tar.gz"
-      sha256 "7323935be66b4c3d28fd4a0221becf251f018f1bbd3b4a0ed8451d478c08d98e"
+      url "https://github.com/Ryooooooga/almel/releases/download/v1.4.3/almel-v1.4.3-aarch64-apple-darwin.tar.gz"
+      sha256 "b152e0885ec48b0e5fefd52f58bbb6b49e1e2b48c6c73b81bda8ac3d474e803b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/almel/releases/download/v1.4.2/almel-v1.4.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ddbb80bcce6ba470bdeb9785bf580a4af6d5dd3a2f3da0fd34925ac224cb978b"
+      url "https://github.com/Ryooooooga/almel/releases/download/v1.4.3/almel-v1.4.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "65f5f1d5fe502ae14ec03160f29d8632dd3d01fdc3e2b110d11b1e32d333db78"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ryooooooga/almel/releases/download/v1.4.2/almel-v1.4.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "83636b2c57426619798f420b7ac40e05fda19cce63584dc6b71da668c5b9cdc3"
+      url "https://github.com/Ryooooooga/almel/releases/download/v1.4.3/almel-v1.4.3-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e78ba1ab2f2e945c955e55f5ec9f0c8b5f2ea0482cdc567ef1ba56c6c918f0d6"
     end
   end
 
