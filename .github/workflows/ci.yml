@@ -22,6 +22,11 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
+      - run: |
+          if [[ "$OSTYPE" =~ linux ]]; then
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+            echo "/home/linuxbrew/.linuxbrew/bin" >>$GITHUB_PATH
+          fi
       - run: brew install -v ryooooooga/tap/${{ matrix.target }}
       - run: brew test -v ${{ matrix.target }}
       - run: which ${{ matrix.target }}
