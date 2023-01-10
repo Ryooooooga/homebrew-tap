@@ -10,22 +10,22 @@ class Almel < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Ryooooooga/almel/releases/download/v1.4.5/almel-v1.4.5-x86_64-apple-darwin.tar.gz"
-      sha256 "d246beffb6124d3af048e89d3d807ebd2280fe6722765ff5904d6d34fd9dec3b"
+      sha256 "2f624c745a4b701b28c49189cc21994ba580a2bb95da3c29a7827dae76209337"
     end
     if Hardware::CPU.arm?
       url "https://github.com/Ryooooooga/almel/releases/download/v1.4.5/almel-v1.4.5-aarch64-apple-darwin.tar.gz"
-      sha256 "af4f2f4a9c926325cee5e14f63a802418d2f30bdce11f0da4654eb2eb837ae3d"
+      sha256 "fc7b2639b538df7761142080c3b206ce790b90933cec5bccb1ab9eceb1a5f184"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/Ryooooooga/almel/releases/download/v1.4.5/almel-v1.4.5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5dd36e88c261fd79504427e74e30ecb1a6d24f1e65337028cab5dbd9a4465ac4"
+      sha256 "0e7d2f8d9fff029e9d8a0b1e64ab5e79e7a3415155077be53044351ceab00b42"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Ryooooooga/almel/releases/download/v1.4.5/almel-v1.4.5-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3e83b0406623d1359a9f27de1525ec2312d1b1154c3c5cc9cc596a52ecf7efbb"
+      sha256 "80f82d378b04a97147bc2e3b54ded9fcef54edc1fc73a8f8ddfe4bf6aaec6655"
     end
   end
 
