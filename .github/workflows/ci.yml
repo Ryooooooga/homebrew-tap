@@ -14,6 +14,7 @@ jobs:
           - zabrze
           - zouch
           - qwy
+          - croque
         os:
           - macOS-latest
           - ubuntu-latest
