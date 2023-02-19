@@ -4,3 +4,4 @@
 - [Ryooooooga/zabrze](https://github.com/Ryooooooga/zabrze)
 - [Ryooooooga/zouch](https://github.com/Ryooooooga/zouch)
 - [Ryooooooga/qwy](https://github.com/Ryooooooga/qwy)
+- [Ryooooooga/croque](https://github.com/Ryooooooga/croque)
