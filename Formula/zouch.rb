@@ -5,20 +5,20 @@
 class Zouch < Formula
   desc "Create a new file from a template."
   homepage "https://github.com/Ryooooooga/zouch"
-  version "0.3.6+4"
+  version "0.3.7"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+4/zouch_0.3.6+4_darwin_arm64.tar.gz"
-      sha256 "ac9323201683afb5984fcf1443580d8b6366243bf34830f669c3a37418596d5b"
+    if Hardware::CPU.intel?
+      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.7/zouch_0.3.7_darwin_amd64.tar.gz"
+      sha256 "88268e18d94a5d61975218e73a2bd9ee674a9cdb881e33448f7285de537ad2d1"
 
       def install
         bin.install "zouch"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+4/zouch_0.3.6+4_darwin_amd64.tar.gz"
-      sha256 "516c04f8141d8559841714d78dd9f58c4af64cc44b1161462ce6ad95b9b763bb"
+    if Hardware::CPU.arm?
+      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.7/zouch_0.3.7_darwin_arm64.tar.gz"
+      sha256 "eda5e11af52b11006c3acd4e4b1f93c3277e2eaf55cd519e5ca6f81e56dbe984"
 
       def install
         bin.install "zouch"
@@ -28,16 +28,16 @@ class Zouch < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+4/zouch_0.3.6+4_linux_amd64.tar.gz"
-      sha256 "e603e00fc7561909d7d6cd52768f91281f168b0fa58799fcefe109b855e56c3c"
+      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.7/zouch_0.3.7_linux_amd64.tar.gz"
+      sha256 "4de9d8c697d749f01361931fbd1e96aa536fc1c800191c9a33025d746744f1b1"
 
       def install
         bin.install "zouch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.6+4/zouch_0.3.6+4_linux_arm64.tar.gz"
-      sha256 "c5ad053484f1eb9a16432315feb3a24198d8a5788a335762e437d74ba0ab3a7a"
+      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.7/zouch_0.3.7_linux_arm64.tar.gz"
+      sha256 "4fb254e2a912dbe83f8ea648870c852de01d6464ea139dfa49e78a617e5710ab"
 
       def install
         bin.install "zouch"
