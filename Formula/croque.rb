@@ -5,27 +5,27 @@
 class Croque < Formula
   desc "Fast and customizable shell prompt"
   homepage "https://github.com/Ryooooooga/croque"
-  version "0.5.1"
+  version "0.5.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/croque/releases/download/v0.5.1/croque-v0.5.1-x86_64-apple-darwin.tar.gz"
-      sha256 "3ebae915dc604ef1c0810d62d577cf143753d4c12e6a6f57af14032d23afa62e"
+      url "https://github.com/Ryooooooga/croque/releases/download/v0.5.2/croque-v0.5.2-x86_64-apple-darwin.tar.gz"
+      sha256 "bc4a05defdeae5e1fb62be017ef725bc3d33fcbe51bdabf4b570219e4c2997b8"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Ryooooooga/croque/releases/download/v0.5.1/croque-v0.5.1-aarch64-apple-darwin.tar.gz"
-      sha256 "e8fd30999b8191809885e744d09d839d32c07979aa42ebd97999c80b144434e8"
+      url "https://github.com/Ryooooooga/croque/releases/download/v0.5.2/croque-v0.5.2-aarch64-apple-darwin.tar.gz"
+      sha256 "245d95a3dcd81f0f0d3bc45dec7d1ff90e3599afea7e69991e80fd4c61e98079"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/croque/releases/download/v0.5.1/croque-v0.5.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6c970cb962f43dfdede03dfa730c595904690c0b3a7b7a22e35d6f42fba20521"
+      url "https://github.com/Ryooooooga/croque/releases/download/v0.5.2/croque-v0.5.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8c66614a10f9190f3e721d1af872fbd2c40069ce1c25b0decf3b80bb8e1c5ca1"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ryooooooga/croque/releases/download/v0.5.1/croque-v0.5.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f1dcea4df0d00053c8da978b01fd8df87b959a5556cbad47ce1652217e8a342e"
+      url "https://github.com/Ryooooooga/croque/releases/download/v0.5.2/croque-v0.5.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "1725716c8d1703746ed8215bb0428a2651677ecd5be1585151255d2f05c13c4f"
     end
   end
 
