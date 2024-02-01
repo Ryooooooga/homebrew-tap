@@ -5,20 +5,20 @@
 class Zouch < Formula
   desc "Create a new file from a template."
   homepage "https://github.com/Ryooooooga/zouch"
-  version "0.3.8"
+  version "0.3.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.8/zouch_0.3.8_darwin_amd64.tar.gz"
-      sha256 "973d8c21cb104ec05525230762644a52b90ecd96fbe2b7f6f2fc7155ef1217d2"
+      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.9/zouch_0.3.9_darwin_amd64.tar.gz"
+      sha256 "52d7df8bfa1c3dbc46f3c7109a90c748b23f81fdd385ca137dabdb0fae4d8389"
 
       def install
         bin.install "zouch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.8/zouch_0.3.8_darwin_arm64.tar.gz"
-      sha256 "ae99d87065cdb5a65f6968687235f774f93ac3bd7c4975346b0e611699babf7b"
+      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.9/zouch_0.3.9_darwin_arm64.tar.gz"
+      sha256 "41b76c18ec7feb09d509d9b04c85ddc480d8583ea719e9c6dc113bed0f188003"
 
       def install
         bin.install "zouch"
@@ -28,16 +28,16 @@ class Zouch < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.8/zouch_0.3.8_linux_arm64.tar.gz"
-      sha256 "863fb2acaad3dfb08b8ff8a27d74c9284add2611878c734b6faa2b24967c93d9"
+      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.9/zouch_0.3.9_linux_arm64.tar.gz"
+      sha256 "587045db8d9ebaa830af462b485a5b77afb344e6e5a849027e63d77256cf9f00"
 
       def install
         bin.install "zouch"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.8/zouch_0.3.8_linux_amd64.tar.gz"
-      sha256 "36260fc6c76a97df7cb4f60fc9d5fc0fba27a00cfeb676f64effe8905de28b3f"
+      url "https://github.com/Ryooooooga/zouch/releases/download/v0.3.9/zouch_0.3.9_linux_amd64.tar.gz"
+      sha256 "0b91b72e68f70e9b1362b23e6d54d24718fc700487c533708edfdf0367734fa4"
 
       def install
         bin.install "zouch"
