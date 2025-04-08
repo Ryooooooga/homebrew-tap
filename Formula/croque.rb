@@ -8,10 +8,6 @@ class Croque < Formula
   version "0.8.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/Ryooooooga/croque/releases/download/v0.8.0/"
-      sha256 ""
-    end
     if Hardware::CPU.arm?
       url "https://github.com/Ryooooooga/croque/releases/download/v0.8.0/croque-v0.8.0-aarch64-apple-darwin.tar.gz"
       sha256 "7a78b2816c42b32e0eeedde4d00133853fb18e5559907bd60c1c2096498fbbaf"
